@@ -1,29 +1,29 @@
-# Person 1 Task: Repository Setup and Team Members Section
+# 第 1 个人任务：初始化仓库 + 团队成员区域
 
-You are responsible for setting up the repository and adding the team members section.
+你负责两件事：先创建并准备仓库，然后完成团队成员卡片区域。
 
-## Part 1: Create and Prepare the Repository
+## 第一部分：创建并准备仓库
 
-Only one person needs to do this setup. Since you are Person 1, do this first.
+这部分只需要一个人做。因为你是第 1 个人，所以先由你完成仓库初始化。
 
-### Step 1: Create the remote repository
+### 第 1 步：创建远程仓库
 
-1. Go to GitHub or Bitbucket.
-2. Create a new repository.
-3. Copy the repository clone URL.
+1. 打开 GitHub 或 Bitbucket。
+2. 创建一个新的 repository。
+3. 复制这个 repository 的 clone 地址。
 
-### Step 2: Clone the repository
+### 第 2 步：克隆仓库到本地
 
 ```bash
 git clone <repository-url>
 cd <repository-folder>
 ```
 
-Replace `<repository-url>` with your actual repository URL.
+把 `<repository-url>` 换成你自己的仓库地址。
 
-### Step 3: Add the starter files
+### 第 3 步：放入初始文件
 
-Copy these files into the repository folder:
+把这 3 个文件复制到仓库文件夹里：
 
 ```text
 index.html
@@ -31,7 +31,7 @@ styles.css
 script.js
 ```
 
-The folder should look like this:
+最终文件夹应该像这样：
 
 ```text
 your-repo-folder/
@@ -40,7 +40,7 @@ your-repo-folder/
 └── script.js
 ```
 
-### Step 4: Commit the starter project
+### 第 4 步：提交初始代码
 
 ```bash
 git add .
@@ -48,31 +48,31 @@ git commit -m "Initial project setup with base structure"
 git push origin main
 ```
 
-### Step 5: Add teammates as collaborators
+### 第 5 步：添加队友为协作者
 
-1. Open the repository on GitHub or Bitbucket.
-2. Go to repository settings.
-3. Add the other two teammates as collaborators.
-4. Wait for them to accept the invitation.
+1. 打开 GitHub 或 Bitbucket 上的仓库页面。
+2. 进入 repository settings。
+3. 把另外两个队友添加为 collaborators。
+4. 等他们接受邀请。
 
-## Part 2: Create Your Feature Branch
+## 第二部分：创建你的功能分支
 
-Make sure you are on `main` and have the latest code:
+先确认你在 `main` 分支，并拉取最新代码：
 
 ```bash
 git switch main
 git pull origin main
 ```
 
-Create your branch:
+创建并切换到你的功能分支：
 
 ```bash
 git switch -c feature/team-members
 ```
 
-## Part 3: Edit `index.html`
+## 第三部分：修改 `index.html`
 
-Find this section:
+找到这一段：
 
 ```html
 <section id="members">
@@ -80,7 +80,7 @@ Find this section:
 </section>
 ```
 
-Replace it with:
+替换成：
 
 ```html
 <section id="members">
@@ -108,11 +108,11 @@ Replace it with:
 </section>
 ```
 
-You can replace `Member 1`, `Member 2`, and `Member 3` with your real names.
+你们可以把 `Member 1`、`Member 2`、`Member 3` 改成真实姓名。
 
-## Part 4: Edit `styles.css`
+## 第四部分：修改 `styles.css`
 
-Find this comment:
+找到这个注释：
 
 ```css
 /* ===========================================
@@ -120,7 +120,7 @@ Find this comment:
    =========================================== */
 ```
 
-Add this CSS under it:
+在它下面加入：
 
 ```css
 .members-grid {
@@ -166,26 +166,26 @@ Add this CSS under it:
 }
 ```
 
-## Part 5: Test Locally
+## 第五部分：本地测试
 
-Open `index.html` in a browser.
+用浏览器打开 `index.html`。
 
-Check that:
+检查这些内容：
 
-- The `Meet the Team` heading appears.
-- Three team member cards appear.
-- The cards have spacing and styling.
-- Hovering over a card moves it slightly upward.
+- 页面出现 `Meet the Team` 标题。
+- 页面出现 3 个团队成员卡片。
+- 卡片有间距和样式。
+- 鼠标移动到卡片上时，卡片会稍微向上移动。
 
-## Part 6: Commit and Push
+## 第六部分：提交并推送
 
-Check your changes:
+先检查改了哪些文件：
 
 ```bash
 git status
 ```
 
-Commit your work:
+提交你的代码：
 
 ```bash
 git add index.html styles.css
@@ -193,35 +193,35 @@ git commit -m "Add team members section with cards layout"
 git push -u origin feature/team-members
 ```
 
-## Part 7: Create a Pull Request
+## 第七部分：创建 Pull Request
 
-1. Open the repository on GitHub or Bitbucket.
-2. Create a Pull Request.
-3. Set source branch to `feature/team-members`.
-4. Set destination branch to `main`.
-5. Use this title:
+1. 打开 GitHub 或 Bitbucket 上的仓库页面。
+2. 创建 Pull Request。
+3. Source branch 选择 `feature/team-members`。
+4. Destination branch 选择 `main`。
+5. 标题写：
 
 ```text
 Add team members section
 ```
 
-6. Use this description:
+6. 描述写：
 
 ```text
 Added the team members section with three profile cards and related styling.
 ```
 
-7. Ask a teammate to review and approve it.
+7. 请一个队友 review 并 approve。
 
-## Part 8: Merge Order
+## 第八部分：合并顺序
 
-Your Pull Request should be merged first.
+你的 Pull Request 应该第一个合并。
 
-After approval:
+审批通过后：
 
-1. Open your Pull Request.
-2. Click Merge.
-3. Use merge commit if the platform asks for a merge strategy.
-4. Confirm the merge.
+1. 打开你的 Pull Request。
+2. 点击 Merge。
+3. 如果平台让你选择合并方式，选择 merge commit。
+4. 确认合并。
 
-After merging, tell your teammates to update their branches from `main` before they merge.
+合并完成后，告诉另外两个队友：他们在合并自己的 PR 前，需要先从 `main` 更新代码。

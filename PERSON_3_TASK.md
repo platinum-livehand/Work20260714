@@ -1,44 +1,44 @@
-# Person 3 Task: Projects Section and Contact Form
+# 第 3 个人任务：项目展示区域 + 联系表单
 
-You are responsible for two features: the projects section and the contact form.
+你负责两个功能：项目展示区域和联系表单。
 
-This is the largest task because the original lab was written for four people. Since your team has three people, you will combine the original Person C and Person D work.
+这是三个人里任务最多的一份，因为原来的实验是给四个人设计的。现在你们只有三个人，所以把原来的 Person C 和 Person D 合并给你完成。
 
-## Step 1: Clone the Repository
+## 第 1 步：克隆仓库
 
-After Person 1 creates the repository and adds you as a collaborator, clone it:
+等第 1 个人创建好仓库，并把你加为 collaborator 后，克隆仓库：
 
 ```bash
 git clone <repository-url>
 cd <repository-folder>
 ```
 
-Replace `<repository-url>` with the actual repository URL.
+把 `<repository-url>` 换成真实仓库地址。
 
-If you already cloned it, go into the folder instead:
+如果你已经克隆过仓库，直接进入项目文件夹：
 
 ```bash
 cd <repository-folder>
 ```
 
-## Step 2: Get the Latest `main`
+## 第 2 步：获取最新的 `main`
 
 ```bash
 git switch main
 git pull origin main
 ```
 
-## Step 3: Create Your Feature Branch
+## 第 3 步：创建你的功能分支
 
 ```bash
 git switch -c feature/projects-and-contact
 ```
 
-## Part 1: Add the Projects Section
+## 第一部分：添加项目展示区域
 
-### Step 4: Edit `index.html`
+### 第 4 步：修改 `index.html`
 
-Find this section:
+找到这一段：
 
 ```html
 <section id="projects">
@@ -46,7 +46,7 @@ Find this section:
 </section>
 ```
 
-Replace it with:
+替换成：
 
 ```html
 <section id="projects">
@@ -83,9 +83,9 @@ Replace it with:
 </section>
 ```
 
-### Step 5: Add Projects CSS
+### 第 5 步：添加项目区域 CSS
 
-Find this comment in `styles.css`:
+在 `styles.css` 里找到这个注释：
 
 ```css
 /* ===========================================
@@ -93,7 +93,7 @@ Find this comment in `styles.css`:
    =========================================== */
 ```
 
-Add this CSS under it:
+在它下面加入：
 
 ```css
 .projects-grid {
@@ -147,9 +147,9 @@ Add this CSS under it:
 }
 ```
 
-### Step 6: Update Projects JavaScript
+### 第 6 步：修改项目区域 JavaScript
 
-Find this function in `script.js`:
+在 `script.js` 里找到这个函数：
 
 ```javascript
 function initProjects() {
@@ -157,7 +157,7 @@ function initProjects() {
 }
 ```
 
-Replace it with:
+替换成：
 
 ```javascript
 function initProjects() {
@@ -173,11 +173,11 @@ function initProjects() {
 }
 ```
 
-## Part 2: Add the Contact Form
+## 第二部分：添加联系表单
 
-### Step 7: Edit `index.html`
+### 第 7 步：修改 `index.html`
 
-Find this section:
+找到这一段：
 
 ```html
 <section id="contact">
@@ -185,7 +185,7 @@ Find this section:
 </section>
 ```
 
-Replace it with:
+替换成：
 
 ```html
 <section id="contact">
@@ -218,9 +218,9 @@ Replace it with:
 </section>
 ```
 
-### Step 8: Add Contact Form CSS
+### 第 8 步：添加联系表单 CSS
 
-Find this comment in `styles.css`:
+在 `styles.css` 里找到这个注释：
 
 ```css
 /* ===========================================
@@ -228,7 +228,7 @@ Find this comment in `styles.css`:
    =========================================== */
 ```
 
-Add this CSS under it:
+在它下面加入：
 
 ```css
 .contact-form {
@@ -299,9 +299,9 @@ Add this CSS under it:
 }
 ```
 
-### Step 9: Update Contact Form JavaScript
+### 第 9 步：修改联系表单 JavaScript
 
-Find this function in `script.js`:
+在 `script.js` 里找到这个函数：
 
 ```javascript
 function initContactForm() {
@@ -309,7 +309,7 @@ function initContactForm() {
 }
 ```
 
-Replace it with:
+替换成：
 
 ```javascript
 function initContactForm() {
@@ -337,34 +337,34 @@ function initContactForm() {
 }
 ```
 
-## Step 10: Test Locally
+## 第 10 步：本地测试
 
-Open `index.html` in a browser.
+用浏览器打开 `index.html`。
 
-Check the projects section:
+检查项目展示区域：
 
-- The `Our Projects` heading appears.
-- Three project cards appear.
-- Each project card has tags.
-- Clicking `View Details` shows an alert.
+- 页面出现 `Our Projects` 标题。
+- 页面出现 3 个项目卡片。
+- 每个项目卡片都有技术标签。
+- 点击 `View Details` 后会弹出提示框。
 
-Check the contact form:
+检查联系表单：
 
-- The `Contact Us` heading appears.
-- Name, email, subject, and message fields appear.
-- Required validation works if fields are empty.
-- Submitting the form shows `Sending message...`.
-- After a short delay, a success message appears.
+- 页面出现 `Contact Us` 标题。
+- Name、Email、Subject、Message 输入项都出现。
+- 空着必填项提交时，浏览器会阻止提交。
+- 正常填写后提交，会显示 `Sending message...`。
+- 等一会儿后，会显示成功信息。
 
-## Step 11: Commit and Push
+## 第 11 步：提交并推送
 
-Check your changes:
+先检查改了哪些文件：
 
 ```bash
 git status
 ```
 
-Commit your work:
+提交你的代码：
 
 ```bash
 git add index.html styles.css script.js
@@ -372,31 +372,31 @@ git commit -m "Add projects section and contact form"
 git push -u origin feature/projects-and-contact
 ```
 
-## Step 12: Create a Pull Request
+## 第 12 步：创建 Pull Request
 
-1. Open the repository on GitHub or Bitbucket.
-2. Create a Pull Request.
-3. Set source branch to `feature/projects-and-contact`.
-4. Set destination branch to `main`.
-5. Use this title:
+1. 打开 GitHub 或 Bitbucket 上的仓库页面。
+2. 创建 Pull Request。
+3. Source branch 选择 `feature/projects-and-contact`。
+4. Destination branch 选择 `main`。
+5. 标题写：
 
 ```text
 Add projects section and contact form
 ```
 
-6. Use this description:
+6. 描述写：
 
 ```text
 Added the projects showcase, project button interactivity, contact form, and form submission feedback.
 ```
 
-7. Ask a teammate to review and approve it.
+7. 请一个队友 review 并 approve。
 
-## Step 13: Before Merging
+## 第 13 步：合并前更新你的分支
 
-Person 1 should merge first. Person 2 should merge second. Your Pull Request should merge last.
+第 1 个人先合并。第 2 个人第二个合并。你的 Pull Request 最后合并。
 
-After Person 1 and Person 2 merge, update your branch:
+等第 1 个人和第 2 个人都合并后，更新你的分支：
 
 ```bash
 git switch main
@@ -406,7 +406,7 @@ git merge main
 git push origin feature/projects-and-contact
 ```
 
-If Git reports conflicts, open the conflicted files, fix the conflict markers, then run:
+如果 Git 提示有 conflicts，打开冲突文件，删除冲突标记并整理最终代码，然后运行：
 
 ```bash
 git add .
@@ -414,22 +414,22 @@ git commit -m "Merge main into projects and contact branch"
 git push origin feature/projects-and-contact
 ```
 
-## Step 14: Merge Your Pull Request
+## 第 14 步：合并你的 Pull Request
 
-After your PR is approved and has no conflicts:
+当你的 PR 被 approve，并且没有 conflicts 后：
 
-1. Open your Pull Request.
-2. Click Merge.
-3. Use merge commit if the platform asks for a merge strategy.
-4. Confirm the merge.
+1. 打开你的 Pull Request。
+2. 点击 Merge。
+3. 如果平台让你选择合并方式，选择 merge commit。
+4. 确认合并。
 
-## Step 15: Final Verification
+## 第 15 步：最终检查
 
-After your PR is merged, everyone should run:
+你的 PR 合并后，所有人都运行：
 
 ```bash
 git switch main
 git pull origin main
 ```
 
-Then open `index.html` and check that all three teammates' features work together.
+然后打开 `index.html`，检查三个人的功能是否都正常显示和运行。

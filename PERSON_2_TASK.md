@@ -1,40 +1,40 @@
-# Person 2 Task: Skills Section
+# 第 2 个人任务：技能区域
 
-You are responsible for adding the skills section.
+你负责添加技能进度条区域。
 
-## Step 1: Clone the Repository
+## 第 1 步：克隆仓库
 
-After Person 1 creates the repository and adds you as a collaborator, clone it:
+等第 1 个人创建好仓库，并把你加为 collaborator 后，克隆仓库：
 
 ```bash
 git clone <repository-url>
 cd <repository-folder>
 ```
 
-Replace `<repository-url>` with the actual repository URL.
+把 `<repository-url>` 换成真实仓库地址。
 
-If you already cloned it, go into the folder instead:
+如果你已经克隆过仓库，直接进入项目文件夹：
 
 ```bash
 cd <repository-folder>
 ```
 
-## Step 2: Get the Latest `main`
+## 第 2 步：获取最新的 `main`
 
 ```bash
 git switch main
 git pull origin main
 ```
 
-## Step 3: Create Your Feature Branch
+## 第 3 步：创建你的功能分支
 
 ```bash
 git switch -c feature/skills-section
 ```
 
-## Step 4: Edit `index.html`
+## 第 4 步：修改 `index.html`
 
-Find this section:
+找到这一段：
 
 ```html
 <section id="skills">
@@ -42,7 +42,7 @@ Find this section:
 </section>
 ```
 
-Replace it with:
+替换成：
 
 ```html
 <section id="skills">
@@ -76,9 +76,9 @@ Replace it with:
 </section>
 ```
 
-## Step 5: Edit `styles.css`
+## 第 5 步：修改 `styles.css`
 
-Find this comment:
+找到这个注释：
 
 ```css
 /* ===========================================
@@ -86,7 +86,7 @@ Find this comment:
    =========================================== */
 ```
 
-Add this CSS under it:
+在它下面加入：
 
 ```css
 .skills-container {
@@ -119,26 +119,26 @@ Add this CSS under it:
 }
 ```
 
-## Step 6: Test Locally
+## 第 6 步：本地测试
 
-Open `index.html` in a browser.
+用浏览器打开 `index.html`。
 
-Check that:
+检查这些内容：
 
-- The `Our Skills` heading appears.
-- Four skills appear.
-- Each skill has a visible progress bar.
-- The progress bars have different widths.
+- 页面出现 `Our Skills` 标题。
+- 页面出现 4 个技能。
+- 每个技能都有进度条。
+- 不同技能的进度条长度不同。
 
-## Step 7: Commit and Push
+## 第 7 步：提交并推送
 
-Check your changes:
+先检查改了哪些文件：
 
 ```bash
 git status
 ```
 
-Commit your work:
+提交你的代码：
 
 ```bash
 git add index.html styles.css
@@ -146,31 +146,31 @@ git commit -m "Add skills section with progress bars"
 git push -u origin feature/skills-section
 ```
 
-## Step 8: Create a Pull Request
+## 第 8 步：创建 Pull Request
 
-1. Open the repository on GitHub or Bitbucket.
-2. Create a Pull Request.
-3. Set source branch to `feature/skills-section`.
-4. Set destination branch to `main`.
-5. Use this title:
+1. 打开 GitHub 或 Bitbucket 上的仓库页面。
+2. 创建 Pull Request。
+3. Source branch 选择 `feature/skills-section`。
+4. Destination branch 选择 `main`。
+5. 标题写：
 
 ```text
 Add skills section
 ```
 
-6. Use this description:
+6. 描述写：
 
 ```text
 Added the skills section with progress bars and related styling.
 ```
 
-7. Ask a teammate to review and approve it.
+7. 请一个队友 review 并 approve。
 
-## Step 9: Before Merging
+## 第 9 步：合并前更新你的分支
 
-Person 1 should merge first.
+第 1 个人应该先合并。
 
-After Person 1 merges, update your local branch:
+等第 1 个人合并后，你需要更新自己的分支：
 
 ```bash
 git switch main
@@ -180,7 +180,7 @@ git merge main
 git push origin feature/skills-section
 ```
 
-If Git reports conflicts, open the conflicted files, fix the conflict markers, then run:
+如果 Git 提示有 conflicts，打开冲突文件，删除冲突标记并整理最终代码，然后运行：
 
 ```bash
 git add .
@@ -188,11 +188,11 @@ git commit -m "Merge main into skills branch"
 git push origin feature/skills-section
 ```
 
-## Step 10: Merge Your Pull Request
+## 第 10 步：合并你的 Pull Request
 
-After your PR is approved and has no conflicts:
+当你的 PR 被 approve，并且没有 conflicts 后：
 
-1. Open your Pull Request.
-2. Click Merge.
-3. Use merge commit if the platform asks for a merge strategy.
-4. Confirm the merge.
+1. 打开你的 Pull Request。
+2. 点击 Merge。
+3. 如果平台让你选择合并方式，选择 merge commit。
+4. 确认合并。
